@@ -23,7 +23,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="3"
             android:fontFamily="@font/myfont"
-            android:text="Home"
+            android:text="Home Page"
             android:textColor="@color/accent"
             android:textSize="@dimen/_20ssp"
             android:textStyle="bold" />
