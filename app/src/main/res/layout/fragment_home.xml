@@ -23,7 +23,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="3"
             android:fontFamily="@font/myfont"
-            android:text="Home Page"
+            android:text="Home"
             android:textColor="@color/accent"
             android:textSize="@dimen/_20ssp"
             android:textStyle="bold" />
@@ -39,7 +39,6 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/What_would_you_like_to_eat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_10sdp"
@@ -49,82 +48,19 @@
         android:textSize="@dimen/_15ssp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/linear_header"
-        app:layout_constraintTop_toBottomOf="@+id/linear_header" />
+        app:layout_constraintTop_toBottomOf="@+id/linear_header"
 
+        />
+    
     <androidx.cardview.widget.CardView
-        android:id="@+id/random_meal_card"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_200sdp"
-
         android:layout_marginStart="@dimen/_25sdp"
+        android:layout_marginEnd="@dimen/_25sdp"
         android:layout_marginTop="@dimen/_10sdp"
-        android:layout_marginEnd="@dimen/_25sdp"
         app:cardCornerRadius="@dimen/_10sdp"
-        app:cardUseCompatPadding="true"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/What_would_you_like_to_eat">
 
-        <ImageView
-            android:id="@+id/img_random_meal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/accent" />
-
-    </androidx.cardview.widget.CardView>
-
-    <TextView
-        android:id="@+id/Over_popular_items"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_18ssp"
-        android:fontFamily="@font/myfont"
-        android:text="Over popular items"
-        android:textColor="@color/black"
-        android:textSize="@dimen/_15ssp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@id/What_would_you_like_to_eat"
-        app:layout_constraintTop_toBottomOf="@+id/random_meal_card" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rec_view_meals_popular"
-        android:layout_width="wrap_content"
-        android:layout_height="@dimen/_120sdp"
-        android:layout_marginStart="@dimen/_25sdp"
-        android:layout_marginEnd="@dimen/_10sdp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Over_popular_items" />
-
-
-    <TextView
-        android:id="@+id/Categories"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/myfont"
-        android:text="Categories"
-        android:textColor="@color/black"
-        android:textSize="@dimen/_15ssp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@id/rec_view_meals_popular"
-        app:layout_constraintTop_toBottomOf="@id/rec_view_meals_popular" />
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-
-        android:layout_marginStart="@dimen/_25sdp"
-        android:layout_marginEnd="@dimen/_25sdp"
-        app:cardCornerRadius="@dimen/_10sdp"
-        app:cardUseCompatPadding="true"
-        app:layout_constraintStart_toStartOf="@+id/Categories"
-        app:layout_constraintTop_toBottomOf="@id/Categories">
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rec_view_categories"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scrollbars="none" />
-
+        >
 
     </androidx.cardview.widget.CardView>
 
